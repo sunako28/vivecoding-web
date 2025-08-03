@@ -1,0 +1,36 @@
+# Node.js
+scripts/node_modules/
+scripts/package-lock.json
+
+# Notion API scripts (contain API keys)
+scripts/notion-reader.js
+scripts/read-miibo-page.js
+
+# Environment variables
+.env
+.env.local
+scripts/.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp

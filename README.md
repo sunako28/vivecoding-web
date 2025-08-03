@@ -16,18 +16,45 @@ ProtoOut Studioが提供する実践的なAI学習プログラムのランディ
 ## ファイル構成
 
 ```
-├── index.html        # メインHTMLファイル
-├── styles.css        # スタイルシート
-├── .nojekyll         # GitHub Pages用設定
-└── README.md         # このファイル
+├── README.md                    # このファイル
+├── .nojekyll                   # GitHub Pages用設定
+├── index.html                  # メインHTMLファイル（シンボリックリンク）
+├── styles.css                  # スタイルシート（シンボリックリンク）
+├── website/                    # Webサイト関連ファイル
+│   ├── index.html             # メインHTMLファイル
+│   └── styles.css             # スタイルシート
+├── scripts/                    # Notion API連携スクリプト
+│   ├── package.json           # Node.js設定
+│   ├── notion-reader.js       # Notion API読み取りスクリプト
+│   ├── read-miibo-page.js     # 特定ページ読み取りスクリプト
+│   └── node_modules/          # Node.js依存関係
+└── docs/                      # ドキュメント・画像ファイル
+    ├── content.md
+    ├── images.md
+    └── image.png
 ```
+
+## 機能
+
+### Webサイト
+- レスポンシブデザイン対応
+- モダンなUI/UX
+- SEO最適化済み
+- FAQアコーディオン機能
+- GitHub Pages対応
+
+### Notion API連携
+- Notion APIを使用したコンテンツ自動取得
+- ページ内容の自動更新機能
+- 構造化されたデータ処理
 
 ## 技術仕様
 
 - HTML5
-- CSS3 (Flexbox, Grid Layout)
+- CSS3 (Flexbox, Grid Layout, Animations)
 - Google Fonts (Noto Sans JP)
-- レスポンシブデザイン
+- Node.js (Notion API用)
+- @notionhq/client SDK
 
 ## GitHub Pages での公開
 
