@@ -395,6 +395,19 @@ body {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
+.audience-description {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.audience-description .main-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #4a5568;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .audience-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -545,6 +558,14 @@ body {
     margin-bottom: 20px;
 }
 
+.cta-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #fff;
+    opacity: 0.9;
+}
+
 .cta-content p {
     font-size: 1.2rem;
     margin-bottom: 40px;
@@ -675,9 +696,15 @@ body {
         height: 450px;
     }
     
-    .hero-features {
-        flex-direction: column;
-        align-items: center;
+    .concept-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .audience-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .section-title {
@@ -712,11 +739,7 @@ body {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 1.8rem;
-    }
-    
-    .hero-description {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     
     .section-title {
@@ -724,10 +747,15 @@ body {
     }
     
     .cta-content h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
-    .logo h1 {
-        font-size: 1.4rem;
+    .hero-img {
+        max-width: 280px;
+    }
+    
+    .hero-placeholder {
+        width: 280px;
+        height: 350px;
     }
 }
