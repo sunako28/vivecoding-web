@@ -1,2 +1,3 @@
 # vivecoding-web
 vibecodingでWEBサイト施策用
+ここでWEBサイトのvibecodingためします
